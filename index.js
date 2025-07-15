@@ -16,7 +16,6 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/run-script", async (req, res) => {
-  console.log("api/run-script");
   try {
     // 1) Ensure the script is executable by owner, group, others (rwx-r-x-r-x)
     await chmod(SCRIPT_PATH, 0o755);

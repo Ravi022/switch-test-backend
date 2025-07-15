@@ -8,8 +8,10 @@
     ],
     "routes": [
       {
-        "src": "/index.js",
-        "dest": "/index.js"
+        "src": "/api/run-script", 
+        "methods": ["GET"],      
+        "dest": "index.js"   
       }
     ]
   }
+  
